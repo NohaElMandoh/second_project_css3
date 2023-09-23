@@ -86,13 +86,15 @@ body {
 .logo_span {
     color: white;
 }
-.header ul i{
 
-   height: 20px;
-   width: 20px;
-margin-right: 15px;
+.header ul i {
+
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
 
 }
+
 /* ---------Start main section style--------------- */
 .main {
     background-color: #3B5D50;
@@ -248,7 +250,7 @@ margin-right: 15px;
 /* ----------------- */
 .discount {
     display: flex;
-    
+
 }
 
 .discount_desc {
@@ -291,9 +293,11 @@ margin-right: 15px;
     background-size: cover;
 
 }
-.product_item:hover{
+
+.product_item:hover {
     transform: scale(1.1);
 }
+
 .discount_desc .icon {
     position: absolute;
     left: 20px;
@@ -301,43 +305,105 @@ margin-right: 15px;
     font-size: 40px;
     color: var(--maincolor);
 }
-.dashed{
+
+.dashed {
     display: flex;
     justify-content: end;
-   
+
 }
-.dash_line{
-    width:10%;
+
+.dash_line {
+    width: 10%;
     background-color: #F9BF29;
     height: 3px;
     margin-right: 10px;
     margin-top: 20px;
 }
+
 /* -------------------------- */
-.why_choose_content{
+.why_choose_content {
     display: flex;
-  
-   text-align: center;
- }
-.why_choose_item{
+
+
+}
+
+.why_choose_item {
     margin: 50px 0;
-    padding: 30px 10px 0px 10px ;
-    border-right: 1px solid  #F9BF29;
+    padding: 30px 10px 0px 10px;
+    border-right: 1px solid #F9BF29;
+    text-align: center;
 }
-.why_choose_item svg{
-    height: 40px;
-    width: 40px;
+.why_choose_item .item_icon i {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+
 }
-.why_choose_content .why_choose_item:last-child{
+.item_icon {
+    /* background-image: url(../Images/new/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+    margin-left: 35%; */
+   
+}
+
+/* .item_icon svg:hover {
+    fill:#aeb5c1;
+
+    position: relative;
+    animation: mymove .9s  forwards;
+} */
+.item_icon svg {
+    height:50px;
+    width: 50px;
+ line-height: 70px;
+}
+
+.why_choose_item:hover .item_icon svg {
+    fill:#aeb5c1;
+    /* color:  #a5afc0;; */
+    position: relative;
+    animation: mymove 1s  forwards;
+
+}
+
+@keyframes mymove {
+   49% {
+        /* left: 0px;
+        top: 0px;
+        opacity: 1; */
+        fill:black;
+        transform: translateY(-90%);
+
+    }
+
+    50%{
+        /* top: -80px; */
+        /*  */
+        /* transition: all 1s ease-out; */
+        opacity: 0;  
+        transform: translateY(50%);
+      
+    }
+   51%{
+    
+    opacity: 1; 
+   }
+}
+
+
+
+.why_choose_content .why_choose_item:last-child {
     border-right: none;
 }
 
 /* --------------------- */
-.products_list_container{
+.products_list_container {
     display: flex;
     margin-top: 20px;
- justify-content: center;
+    justify-content: center;
 }
+
 .products_list ul {
 
     list-style: none;
@@ -345,13 +411,13 @@ margin-right: 15px;
 
 }
 
-.products_list  li {
+.products_list li {
     display: inline-block;
     margin-right: 10px;
 
 }
 
-.products_list  li>a {
+.products_list li>a {
 
     color: #3B5D50;
     text-decoration: none;
@@ -359,7 +425,7 @@ margin-right: 15px;
 
 }
 
-.products_list  li a:hover {
+.products_list li a:hover {
 
     color: #F9BF29;
 
@@ -373,7 +439,7 @@ margin-right: 15px;
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-gap: 5px;
-    
+
     justify-content: space-between;
     align-items: center;
 
@@ -382,8 +448,9 @@ margin-right: 15px;
 .pro_item {
     position: relative;
     text-align: center;
-  
+
 }
+
 .pro_overlay {
     position: absolute;
     top: 0;
@@ -396,33 +463,39 @@ margin-right: 15px;
 .pro_item:hover .pro_overlay {
     transform: scalex(1);
 }
-.pro_item  .item_image{
+
+.pro_item .item_image {
     background-color: #EFF2F1;
 }
+
 .pro_item img {
 
     width: 100%;
 }
 
-.overlay_social_list{
+.overlay_social_list {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     list-style: none;
 
 }
 
-.overlay_social_list  li {
+.overlay_social_list li {
     width: 30px;
-    height: 30px;
-    background-color:  #2F2F2F;
+    height:30px;
+    /* background-color: #2F2F2F; */
     display: inline-block;
     text-align: center;
-   
+
 }
 
-.pro_overlay ul  li  i {
-    line-height: 40px;
-    color:  #F9BF29;
+.pro_overlay ul li i {
+    line-height: 70px;
+    color: rgba(39, 38, 38, 0.925);
+}
+  .active {
+    
+    color: #F9BF29;
 }
